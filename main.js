@@ -27,8 +27,7 @@ class Day {
     //calculate days until given date
     daysUntilDate() {
         //ceil acoounts for remainder of current day:
-        const days = Math.ceil(this.millisecondsToDays());
-        return days;
+        return Math.ceil(this.millisecondsToDays());
     }
 
     //returns a list element complete with no. of days & name in a sentence 

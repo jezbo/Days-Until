@@ -33,10 +33,9 @@ class Day {
 
     //returns a list element complete with no. of days & name in a sentence 
     createListElement() {
-        const numberOfDays = this.daysUntilDate();
         return (
         `<li>
-            ${numberOfDays.toString()} days until ${this.name}
+            ${this.daysUntilDate()} days until ${this.name}
         </li>`
         );
     }
@@ -54,7 +53,7 @@ const xmasDay2021 = new Day(christmas2021);
 const newYearsDay2022 = new Day(newYear2022);
 const valentinesDay2022 = new Day(valentines2022);
 
-/***** CLICK HANDLER *****/ 
+/***** EVENT HANDLER *****/ 
 $("#trigger").click(() => {
     xmasDay2021.appendListItem()
     newYearsDay2022.appendListItem()

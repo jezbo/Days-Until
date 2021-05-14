@@ -20,7 +20,7 @@ class Day {
       
     //convert milliseconds to days
     millisecondsToDays() {
-        const millisecondsInADay=86400000;
+        const millisecondsInADay=24*60*60*1000;
         return this.millisecondsUntilDate() / millisecondsInADay;
     }
       
